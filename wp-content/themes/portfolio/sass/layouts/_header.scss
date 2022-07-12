@@ -1,0 +1,163 @@
+.header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 5rem;
+    display: flex;
+    height: 10rem;
+    background-color: rgba($color: $color_primary, $alpha: 0.85);
+    transition: all .5s;
+    z-index: 2;
+    @include respond(phone){
+        padding: 0 3rem;
+    }
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        position: relative;
+        z-index: 12;
+        align-items: center;
+        &--links{
+            display: flex;
+            column-gap: 2rem;
+            list-style: none;
+            @include respond(big-phone){
+                display: none;
+            }
+            #home-link{
+                opacity: 0;
+                // animation-fill-mode: forwards;
+                &::before{
+                    content: "01.";
+                    color: $color_secondary;
+                }
+            }
+            #about-link{
+                opacity: 0;
+                &::before{
+                    content: "02.";
+                    color: $color_secondary;
+                }
+            }
+            #skills-link{
+                opacity: 0;
+                &::before{
+                    content: "03.";
+                    color: $color_secondary;
+                }
+            }
+            #projects-link{
+                opacity: 0;
+                &::before{
+                    content: "04.";
+                    color: $color_secondary;
+                }
+            }
+            #contact-link{
+                opacity: 0;
+                &::before{
+                    content: "05.";
+                    color: $color_secondary;
+                }
+            }
+            li{
+                a{
+                    text-decoration: none;
+                    color: inherit;
+                    font-size: inherit;
+                }
+            }
+        }
+    }
+}
+.left-element{
+    width: 4rem;
+    position: fixed;
+    bottom: 0;
+    left: 4rem;
+    right: auto;
+    color: $color_text;
+    @include respond(tablet){
+        left: 2rem;
+    }
+    @include respond(phone){
+        display: none;
+    }
+    .socials{
+        display: flex;
+        row-gap: 1rem;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        li{
+            a{
+                display: inline-block;
+                position: relative;
+                padding: 1rem;
+                text-decoration: none;
+                color: inherit;
+                svg{
+                    width: 2rem;
+                    height: 2rem;
+                    vertical-align: middle;
+                    @include respond(tablet){
+                        width: 1.8rem;
+                        height: 1.8rem;
+                    }
+                }
+            }
+        }
+        &::after{
+            content: "";
+            display: block;
+            width: 1px;
+            height: 9rem;
+            margin: 0 auto;
+            background-color: $color_text;
+        }
+    }
+}
+
+.right-element{
+    width: 4rem;
+    position: fixed;
+    bottom: 0;
+    right: 4rem;
+    left: auto;
+    color: $color_text;
+    @include respond(tablet){
+        right: 2rem;
+    }
+    @include respond(phone){
+        display: none;
+    }
+    .email{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        a{
+            margin: 2rem auto;
+            padding: 1rem;
+            line-height: 1.3;
+            letter-spacing: 0.1em;
+            writing-mode: vertical-lr;
+                display: inline-block;
+                position: relative;
+                padding: 1rem;
+                text-decoration: none;
+                color: inherit;
+        }
+        &::after{
+            content: "";
+            display: block;
+            width: 1px;
+            height: 9rem;
+            margin: 0 auto;
+            background-color: $color_text;
+        }
+    }
+} 

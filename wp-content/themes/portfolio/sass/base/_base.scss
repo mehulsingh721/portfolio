@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&family=Teko:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+*::selection {
+  color: #CCD6F6;
+  background: #3c3e40;
+} 
+
+html {
+    font-size: 62.5%; // 1rem = 10px;
+    scroll-behavior: smooth;
+
+    @include respond(phone)  {
+        font-size: 40%; //1rem = 8px
+    }
+
+    @include respond(small-screens)  {
+        font-size: 50%; //1rem = 8px
+    }
+
+    @include respond(desktop)  {
+        font-size: 56.25%; //1rem = 9px
+    }
+
+    // @include respond(big-desktop)  {
+    //     font-size: 75%; //1rem = 12
+    // }
+
+
+}
+
+body {
+    /* Total borders or paddings are not added to total height of an element */
+    box-sizing: border-box;
+    padding: 0rem;
+    font-family: $font_body;
+    background-color: $color_primary;
+
+//     @include respond(tab-port)  {
+//         padding: 0;
+//     }
+}
+.blur{
+        filter: blur(5px);
+        overflow: hidden;
+}
+
+.message{
+    position: fixed;
+    top: 90%;
+    left: 96%;
+    width: 5rem;
+    z-index: 2;
+    // @include respond(tab-port){
+    //     left: 95%;
+    //     top: 95%;
+    // }
+    // @include respond(big-phone){
+    //     left: 90%;
+    //     top: 95%;
+    // }
+    // @include respond(phone){
+    //     left: 88%;
+    //     top: 91%;
+    // }
+}
+

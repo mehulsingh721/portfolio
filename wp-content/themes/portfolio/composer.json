@@ -1,0 +1,17 @@
+{
+    "name": "lucifer/portfolio",
+    "autoload": {
+        "psr-4": {
+            "Lucifer\\Portfolio\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mehul Singh Rathore",
+            "email": "mehulsingh072001@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "php-stubs/wordpress-stubs": "^6.0"
+    }
+}

@@ -1,0 +1,19 @@
+.calendar-modal{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background-color: rgba($color: $color_primary, $alpha: .9);
+  .close{
+    position: absolute;
+    right: 0;
+    padding: 2rem;
+    background-color: transparent;
+    color: white;
+    font-size: 3rem;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    z-index: 13;
+  }
+}
