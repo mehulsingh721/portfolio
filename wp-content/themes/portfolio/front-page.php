@@ -1,10 +1,9 @@
 <?php get_header();
-/* <h1>HELLo</h1> */
-/* <h1>HELLo</h1> */
 ?>
 <div id="content">
     <?php calendarModal() ?>
     <?php projectModal() ?>
+    <h1>Hello world</h1>
     <main class="home-page">
         <section id="home" class="home-page__hero">
             <div>
