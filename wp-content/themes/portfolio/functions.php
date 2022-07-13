@@ -80,3 +80,5 @@ function calendarModal()
         </div>
     </div>
 <?php }
+
+add_action('init', "initHook", 0);  // We use the 0 to bypass priority
