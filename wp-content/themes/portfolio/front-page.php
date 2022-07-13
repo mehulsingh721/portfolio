@@ -26,7 +26,6 @@
             <div class="home-page__about--container">
             <?php echo plugins_url()?>
                 <div>
-                    <h1 class="section-heading">Who am I</h1>
                     <?php
                     $home_page = get_option("home-page");
                     $fields = get_fields($home_page);
