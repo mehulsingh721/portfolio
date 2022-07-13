@@ -3,7 +3,6 @@
 <div id="content">
     <?php calendarModal() ?>
     <?php projectModal() ?>
-    <h1>Hello world</h1>
     <main class="home-page">
         <section id="home" class="home-page__hero">
             <div>
@@ -14,6 +13,7 @@
             </div>
             <div>
                 <h3 id="home-h3" class="heading-1-sec">And I build awesome stuff.</h1>
+                <h1 class="heading-1-sec">Hello world</h1>
             </div>
             <div>
                 <p id="home-p" class="copy__para--big">I’m a software developer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered softwares as a freelancer.</p>
