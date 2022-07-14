@@ -2,17 +2,17 @@
 function portfolio_files()
 {
     wp_enqueue_style('main_styles', get_stylesheet_uri());
-    wp_enqueue_style("aos", "https://unpkg.com/aos@next/dist/aos.css");
-    wp_enqueue_script('aos-script', 'https://unpkg.com/aos@next/dist/aos.js');
+    wp_enqueue_style("aos", "https://unpkg.com/aos@next/dist/aos.css", '', '1.0', true);
+    wp_enqueue_script('aos-script', 'https://unpkg.com/aos@next/dist/aos.js', '', '1.0', true);
     /* wp_enqueue_style('font_awesome', "https://kit.fontawesome.com/8a9452b019.js"); */
-    wp_enqueue_script('calendly', 'https://assets.calendly.com/assets/external/widget.js');
-    wp_enqueue_script('active-links', get_bloginfo("template_url") . '/js/active-links.js');
-    wp_enqueue_script('navbar-hide', get_bloginfo("template_url") . '/js/NavbarHide.js');
-    wp_enqueue_script('page-loader', get_bloginfo("template_url") . '/js/PageLoader.js');
-    wp_enqueue_script('app', get_bloginfo("template_url") . '/js/app.js');
-    wp_enqueue_script('slideshow', get_bloginfo("template_url") . '/js/Slideshow.js');
-    wp_enqueue_script('project', get_bloginfo("template_url") . '/js/Project.js');
-    wp_enqueue_script('gtag', "https://www.googletagmanager.com/gtag/js?id=G-5RF99P8SKH");
+    wp_enqueue_script('calendly', 'https://assets.calendly.com/assets/external/widget.js', '', '1.0', true);
+    wp_enqueue_script('active-links', get_bloginfo("template_url") . '/js/active-links.js', '', '1.0', true);
+    wp_enqueue_script('navbar-hide', get_bloginfo("template_url") . '/js/NavbarHide.js', '', '1.0', true);
+    wp_enqueue_script('page-loader', get_bloginfo("template_url") . '/js/PageLoader.js', '', '1.0', true);
+    wp_enqueue_script('app', get_bloginfo("template_url") . '/js/app.js', '', '1.0', true);
+    wp_enqueue_script('slideshow', get_bloginfo("template_url") . '/js/Slideshow.js', '', '1.0', true);
+    wp_enqueue_script('project', get_bloginfo("template_url") . '/js/Project.js', '', '1.0', true);
+    wp_enqueue_script('gtag', "https://www.googletagmanager.com/gtag/js?id=G-5RF99P8SKH", '', '1.0', true);
 }
 
 add_action('wp_enqueue_scripts', 'portfolio_files');
