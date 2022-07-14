@@ -25,7 +25,8 @@
         <section id="about" class="home-page__about" data-aos="fade-up">
             <div class="home-page__about--container">
                 <?php
-                echo plugins_url()."/advanced-custom-fields-pro";
+                /* echo plugins_url(); */
+                echo plugin_dir_url( __FILE__ );
                 ?>
                 <div>
                     <?php

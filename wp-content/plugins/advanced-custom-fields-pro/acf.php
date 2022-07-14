@@ -74,7 +74,7 @@ if ( ! class_exists( 'ACF' ) ) :
 				'basename'               => ACF_BASENAME,
 				'path'                   => ACF_PATH,
 				'file'                   => __FILE__,
-				'url'                    => plugins_url()."/advanced-custom-fields-pro",
+				'url'                    => plugin_dir_url( __FILE__ ),
 				'show_admin'             => true,
 				'show_updates'           => true,
 				'stripslashes'           => false,

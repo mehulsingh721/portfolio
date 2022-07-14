@@ -75,8 +75,19 @@ function calendarModal()
             <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>-->
             <!-- Calendly inline widget begin -->
             <div class="calendly-inline-widget" data-url="https://calendly.com/mehulsingh072001/q-a-meeting" style="min-width:320px;height:630px;"></div>
-            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
             <!-- Calendly inline widget end -->
         </div>
     </div>
 <?php }
+
+function acf_settings_path($path)
+{
+    return "https://www.mehulsingh.com/bitnami/wordpress/wp-content/plugins/advanced-custom-fields-pro/";
+}
+add_filter('acf/settings/path', 'acf_settings_path');
+
+function acf_settings_dir($dir)
+{
+    return "https://www.mehulsingh.com/bitnami/wordpress/wp-content/plugins/advanced-custom-fields-pro/";
+}
+add_filter('acf/settings/dir', 'acf_settings_dir');
