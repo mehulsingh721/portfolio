@@ -17,6 +17,8 @@ function portfolio_files()
 
 add_action('wp_enqueue_scripts', 'portfolio_files');
 
+add_filter( 'get_site_icon_url', '__return_false' );
+
 /* function portfolio_register_scripts(){ */
 /* } */
 
