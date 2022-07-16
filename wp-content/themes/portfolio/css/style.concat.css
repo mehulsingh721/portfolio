@@ -800,7 +800,6 @@ section {
   padding: 10rem;
   display: flex;
   flex-direction: column;
-  cursor: pointer;
   align-items: flex-start;
   row-gap: 5rem; }
   @media screen and (max-width: 56.625em) {
@@ -837,12 +836,15 @@ section {
             justify-content: left;
             text-align: left; } }
         .home-page__projects .container__content .info .title {
-          margin: 0px 0px 20px; }
+          margin: 0px 0px 20px;
+          cursor: pointer; }
           @media screen and (max-width: 37.5em) {
             .home-page__projects .container__content .info .title {
               padding: 2.5rem;
               margin: 0;
               width: 100%; } }
+          .home-page__projects .container__content .info .title:hover {
+            color: #5F85DB; }
         .home-page__projects .container__content .info .description {
           bottom: 0;
           position: relative;
@@ -866,12 +868,33 @@ section {
           .home-page__projects .container__content .info ul li {
             color: #8892B0;
             font-family: "Space Mono", sans-serif; }
-      .home-page__projects .container__content .links .link {
-        height: 2rem;
-        width: 2rem; }
-        .home-page__projects .container__content .links .link a {
-          text-decoration: none;
-          color: #8892B0; }
+      .home-page__projects .container__content .actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%; }
+        .home-page__projects .container__content .actions .details {
+          cursor: pointer;
+          background-color: transparent;
+          border: none;
+          font-family: "Inter", sans-serif;
+          color: #8892B0;
+          font-size: 1.6rem;
+          font-weight: 500;
+          display: flex;
+          column-gap: .7rem;
+          align-items: center;
+          transition: .4s; }
+          .home-page__projects .container__content .actions .details:hover {
+            color: #5F85DB; }
+        .home-page__projects .container__content .actions .links {
+          height: max-content; }
+          .home-page__projects .container__content .actions .links .link {
+            height: 2rem;
+            width: 2rem; }
+            .home-page__projects .container__content .actions .links .link a {
+              text-decoration: none;
+              color: #8892B0; }
     .home-page__projects .container__image {
       grid-area: 1 / 6 / -1 / -1;
       position: relative;
@@ -887,8 +910,8 @@ section {
           height: 20rem; } }
       .home-page__projects .container__image img {
         position: relative;
-        width: 7rem;
-        height: 6rem; }
+        width: 100%;
+        height: 100%; }
     .home-page__projects .container:not(:last-child) {
       margin-bottom: 10rem; }
     .home-page__projects .container:nth-of-type(2n+1) .container__content {

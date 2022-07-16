@@ -208,7 +208,6 @@
         padding: 10rem;
         display: flex;
         flex-direction: column;
-        cursor: pointer;
         align-items: flex-start;
         row-gap: 5rem;
         @include respond(tablet){
@@ -252,6 +251,11 @@
                             margin: 0;
                             width: 100%;
                         }
+                        cursor: pointer;
+                        transition: .4s;
+                        &:hover{
+                            color: $color_secondary;
+                        }
                     }
                     .description{
                         bottom: 0;
@@ -285,13 +289,36 @@
                         }
                     }
                 }
-                .links{
-                    .link{
-                        height: 2rem;
-                        width: 2rem;
-                        a{
-                            text-decoration: none;
-                            color: $color_text_tertiary;
+                .actions{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 80%;
+                    .details{
+                        cursor: pointer;
+                        background-color: transparent;
+                        border: none;
+                        font-family: $font_body;
+                        color: $color_text_tertiary;
+                        font-size: 1.6rem;
+                        font-weight: 500;
+                        display: flex;
+                        column-gap: .7rem;
+                        align-items: center;
+                        transition: .4s;
+                        &:hover{
+                            color: $color_secondary;
+                        }
+                    }
+                    .links{
+                        height: max-content;
+                        .link{
+                            height: 2rem;
+                            width: 2rem;
+                            a{
+                                text-decoration: none;
+                                color: $color_text_tertiary;
+                            }
                         }
                     }
                 }
@@ -313,8 +340,8 @@
                 }
                 img{
                     position: relative;
-                    width: 7rem;
-                    height: 6rem;
+                    width: 100%;
+                    height: 100%;
                 }
             }
             &:not(:last-child){
