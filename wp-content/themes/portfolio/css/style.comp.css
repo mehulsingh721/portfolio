@@ -184,6 +184,24 @@ body {
       .section-heading::after {
         width: 100%; } }
 
+.u-margin-top-small {
+  margin-top: 1rem !important; }
+
+.u-margin-top-medium {
+  margin-top: 2rem !important; }
+
+.u-margin-top-big {
+  margin-top: 3rem !important; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1rem !important; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 2rem !important; }
+
+.u-margin-bottom-big {
+  margin-bottom: 3rem !important; }
+
 #loader {
   height: 100vh;
   width: 100%;
@@ -314,14 +332,34 @@ body {
         background-color: #717171; }
     .project-modal__container--description {
       display: grid;
-      grid-gap: 2rem;
       max-height: 55%;
       overflow: auto;
       padding: 2rem 3rem;
       transition: .3s ease-in; }
-      .project-modal__container--description p {
+      .project-modal__container--description p, .project-modal__container--description ul {
         font-size: 1.4rem;
-        color: #CCD6F6; }
+        color: #CCD6F6;
+        line-height: 1.5; }
+      .project-modal__container--description ul {
+        font-size: 1.2rem;
+        margin-left: 3rem; }
+        .project-modal__container--description ul li {
+          margin-top: .4rem; }
+      .project-modal__container--description .project-heading-2 {
+        font-size: 2.8rem;
+        width: 100%;
+        color: #CCD6F6;
+        font-weight: 600; }
+      .project-modal__container--description .project-heading-3 {
+        font-size: 1.8rem;
+        width: 100%;
+        color: #CCD6F6;
+        font-weight: 700; }
+      .project-modal__container--description .project-heading-4 {
+        font-size: 1.6rem;
+        width: 100%;
+        color: #CCD6F6;
+        font-weight: 600; }
 
 .btn {
   border: 1px solid #5F85DB;
@@ -837,7 +875,8 @@ section {
             text-align: left; } }
         .home-page__projects .container__content .info .title {
           margin: 0px 0px 20px;
-          cursor: pointer; }
+          cursor: pointer;
+          transition: .4s; }
           @media screen and (max-width: 37.5em) {
             .home-page__projects .container__content .info .title {
               padding: 2.5rem;

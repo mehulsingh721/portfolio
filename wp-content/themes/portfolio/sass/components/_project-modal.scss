@@ -102,14 +102,42 @@
     }
     &--description{
       display: grid;
-      grid-gap: 2rem;
       max-height: 55%;
       overflow: auto;
       padding: 2rem 3rem;
       transition: .3s ease-in;
-      p{
+      p, ul{
         font-size: 1.4rem;
         color: $color_text;
+        line-height: 1.5;
+      }
+      ul{
+        font-size: 1.2rem;
+        margin-left: 3rem;
+        li{
+          margin-top: .4rem;
+        }
+      }
+
+      .project-heading-2{
+          font-size: 2.8rem;
+          width: 100%;
+          color: $color_text;
+          font-weight: 600;
+      }
+
+      .project-heading-3{
+          font-size: 1.8rem;
+          width: 100%;
+          color: $color_text;
+          font-weight: 700;
+      }
+
+      .project-heading-4{
+          font-size: 1.6rem;
+          width: 100%;
+          color: $color_text;
+          font-weight: 600;
       }
     }
   }
