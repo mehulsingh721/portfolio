@@ -17,7 +17,7 @@ const openProjectModal = (projectId) => {
     const projectDescription = document.getElementById("project-description")
     const slides = []
 
-    jQuery.getJSON(`http://localhost:10003/wp-json/wp/v2/project/${projectId}?acf_format=standard`, (project) => {
+    jQuery.getJSON(`https://www.mehulsingh.com/wp-json/wp/v2/project/${projectId}?acf_format=standard`, (project) => {
         const images = project.acf.images
         const content = project.content.rendered
         projectDescription.innerHTML = content
