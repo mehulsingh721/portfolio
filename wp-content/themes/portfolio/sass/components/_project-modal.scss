@@ -3,7 +3,7 @@
   width: 100%;
   height: 100%;
   z-index: 3;
-  background-color: rgba($color: black, $alpha: .4);
+  background-color: rgba($color: black, $alpha: .6);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,6 +13,7 @@
     top: 0;
     right: 0;
     padding: 2rem;
+    margin-bottom: 2rem;
     background-color: transparent;
     color: white;
     font-size: 3rem;
@@ -25,25 +26,26 @@
   &__container{
     background-color: $color_primary_light;
     width: 40%;
-    height: 85%;
+    height: 83%;
     border-radius: 4px;
     @include respond(desktop){
       width: 50%;
     }
     @include respond(tablet){
-      width: 70%;
-      height: 75%;
+      width: 85%;
+      height: 85%;
     }
     @include respond(big-phone){
       width: 90%;
-      height: 75%;
+      height: 90%;
     }
     &--slideshow{
       height: 45%;
       width: 100%;
       background-color: red;
       transition: .3s ease-in;
-      @include respond(tablet){
+      @include respond(big-phone){
+        height: 25%;
       }
       
       #project-slideshow__container{
@@ -84,6 +86,9 @@
         margin-top: -2%;
         justify-content: center;
         column-gap: 1rem;
+        @include respond(big-phone){
+          margin-top: -5%;
+        }
         .dot{
           cursor: pointer;
           z-index: 2;
@@ -106,6 +111,9 @@
       overflow: auto;
       padding: 2rem 3rem;
       transition: .3s ease-in;
+      @include respond(big-phone){
+        max-height: 75%;
+      }
       p, ul{
         font-size: 1.4rem;
         color: $color_text;

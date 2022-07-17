@@ -54,7 +54,13 @@ const projectSlideshowShrink = (el, slideshow) => {
         el.style.maxHeight = "85%"
     }
     else {
-        slideshow.style.height = "45%"
-        el.style.maxHeight = "55%"
+        if(window.screen.width < 600){
+            slideshow.style.height = "25%"
+            el.style.maxHeight = "75%"
+        }
+        else{
+            slideshow.style.height = "45%"
+            el.style.maxHeight = "55%"
+        }
     }
 }
