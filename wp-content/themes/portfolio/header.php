@@ -30,6 +30,7 @@
                     <li id="skills-link"><a href="/#skills">Skills</a></li>
                     <li id="projects-link"><a href="/#projects">Projects</a></li>
                     <li id="contact-link"><a href="/#contact">Contact</a></li>
+                    <li id="blog-link"><a href="/blog">Blog</a></li>
                 </ul>
                 <div class="hamburger">
                     <div id="hamburger-box" class="hamburger__box" onclick="toggleHamburger()">
@@ -44,6 +45,7 @@
                             <li onclick="toggleHamburger()"><a href="/#skills">Skills</a></li>
                             <li onclick="toggleHamburger()"><a href="/#projects">Projects</a></li>
                             <li onclick="toggleHamburger()"><a href="/#contact">Contact</a></li>
+                            <li onclick="toggleHamburger()"><a href="/blog">Blog</a></li>
                         </ul>
                     </div>
                 </div>
